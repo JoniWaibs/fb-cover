@@ -16,8 +16,6 @@ const AppBody = styled.div`
 `;
 
 const App = () => {
-
-
   const [{currentUser}, dispatch] = useStateValue();
 
   useEffect(()=>{

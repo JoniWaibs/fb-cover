@@ -1,8 +1,8 @@
-import React from 'react'
-import { FeedContainer } from './styles'
-import StoryReel from './StoryReel'
-import PostFrame from './PostFrame'
-import MainContent from './MainContent'
+import React from 'react';
+import { FeedContainer } from './styles';
+import StoryReel from './StoryReel';
+import PostFrame from './PostFrame';
+import MainContent from './MainContent';
 
 
 const Feed = () => {

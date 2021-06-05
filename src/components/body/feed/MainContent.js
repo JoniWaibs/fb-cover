@@ -7,18 +7,18 @@ import { db } from '../../../config/firebase'
 
 const MainContent = () => {
   const [{currentUser}] = useStateValue();
-  const CurrentUserAvatar = currentUser.photoURL
-  const [posts, setPosts ] = useState([])
+  const CurrentUserAvatar = currentUser.photoURL;
+  const [posts, setPosts ] = useState([]);
   //get posts database and map
   useEffect(() => {
     db.collection('posts').orderBy('timestamp', 'desc').onSnapshot(snapshot =>{
       let posts = snapshot.docs.map( doc => {
         return {id : doc.id, data : doc.data()}
-      })
-      setPosts(posts)
-    })
+      });
+      setPosts(posts);
+    });
     //eslint-disable-next-line
-  }, [])
+  }, []);
 
   // const postsHard = [
   //   {
